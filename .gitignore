@@ -1,4 +1,5 @@
+.gitignore
 /cmake-build-debug/
 /main.c
-/undone/
+/undone/*
 CMakeLists.txt

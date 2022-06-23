@@ -4,4 +4,4 @@ set(PROJECT_NAME codewars_C)
 
 project(${PROJECT_NAME})
 
-add_executable(${PROJECT_NAME} ready_for_prime_time.c)
+add_executable(${PROJECT_NAME} the_supermarket_queue.c)
