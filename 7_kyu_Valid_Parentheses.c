@@ -33,23 +33,11 @@ valid_parentheses(char*s,t){for(t=1;*s*t;t-=*s++%2*2-1);return!--t;}
 
 #include <stdbool.h>
 #include <stdlib.h.>
-#include <stdio.h>
 
 struct Stack_t {
     char data;
     struct Stack_t* next;
 };
-
-void push(struct Stack_t** top_ref, int new_d);
-int pop(struct Stack_t** top_ref);
-bool match(char c_a, char c_b);
-
-bool valid_parentheses(const char* str);
-
-int main(void) {
-    char* str = ")(";
-    printf("%d", valid_parentheses(str));
-}
 
 void push(struct Stack_t** top_ref, int new_d) {
     struct Stack_t* new_stack = (struct Stack_t*)malloc(sizeof(struct Stack_t));
